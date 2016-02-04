@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>Our Endorsements</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+	<script type="text/javascript" src="js/bootstrap-transition.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />	
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+  </head>
+	
+  <body>
+	<a id="top"></a>
+	<div id="first_view"></div> <!-- blanket -->
+	
+    <div class="container">
+		<header class="page-header">
+	  		<h2>Welcome <span id="change"><script>user();writeTo();</script></span></h2>
+	  		<h1>Endorsements</h1>
+	  		<div class="navbar navbar-inverse">
+	    		<div class="navbar-inner nav-collapse" style="height: auto;">
+	      			<ul class="nav">		
+						<li><a href="index.html">Home</a></li>
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="project.html">Projects</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li class="active"><a href="endorsements.html">Endorsements</a></li>
+	      			</ul>
+	    		</div>
+	  		</div>
+	  
+		</header>
+		
+		<article>
+			<h3>Comments:</h3>
+			<!-- Where they can enter their comments -->
+			<textarea rows="4" cols="50" id="textarea" name="textarea" onkeypress="saveText()">Enter You comments here.</textarea><br>
+			<button id="submitButton" name="submitButton" onclick="submitTest()">Submit</button>
+			<!-- <button id="buttonTest" name="buttonTest" onclick="submitTest()">Test Me</button> -->
+			<input type="button" value="Reset" onclick="eraseTxt()"><br><br>
+			<div class="content">
+				<!-- Endorsements get displayed here -->
+				<p id="endorsements"></p>
+				<a href="#top" class="link">Back to Top</a>
+			</div>
+		</article>
+	</div>
+
+
+<script type="text/javascript"> 
+
+$(document).ready(function () {  
+
+$('.dropdown-toggle').dropdown();  
+
+});  
+
+</script>
+	</body>
+</html>

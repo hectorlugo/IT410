@@ -1,0 +1,367 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta charset="UTF-8">
+	<title>IT 101 Semester Project - Teancum & Hector</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-carousel.js"></script>
+	<script type="text/javascript" src="js/bootstrap-transition.js"></script>
+	<script type="text/javascript" src="js/myjs.js"></script>
+	<script type="text/javascript" src="js/orderform.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />	
+	<link type="text/css" rel="stylesheet" href="css/stylesheet.css" />
+	<link rel="shortcut icon" href="img/favicon.ico"/>
+  </head>
+	
+  <body>
+	<a id="top"></a>
+	<div id="first_view">
+	</div>
+    <div class="container">
+	<header class="page-header">
+	  <h2>Welcome <span id="change"><script>user();</script></span></h2>
+	  <h1>About Hector</h1>
+	  <div class="navbar navbar-inverse">
+	    <div class="navbar-inner nav-collapse" style="height: auto;">
+	      <ul class="nav">		
+		<li><a href="index.html">Home</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="project.html">Projects</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="endorsements.html">Endorsements</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	  
+	</header>
+		<div class="content">
+			<a href="#ship_info" class="link">Go to Shipping information</a>
+		<form name="orderform" method="post" action="orderprocess.php">
+<table width='90%' border=0>
+
+<tr>
+<td><h1>Product</h1></td>
+<td><h1>Price</h1></td>
+<td width=20%><h1>Quantity</h1></td>
+<td width=20%><h1>Sub-total</h1></td>
+</tr>
+
+<tr>
+<td><label for="cafe">Activator Heritage Caf&eacute;</label></td>
+<td>$34.00</td>
+<td><input type="text" name="cafe" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="cafe_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="antistress">Anti-Stress</label></td>
+<td>$36.00</td>
+<td><input type="text" name="antistress" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="antistress_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="catsclaw">Cat's Claw</label></td>
+<td>$34.00</td>
+<td><input type="text" name="catsclaw" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="catsclaw_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="complete">Complete</label></td>
+<td>$34.00</td>
+<td><input type="text" name="complete" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="complete_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="detox">Detox</label></td>
+<td>$29.00</td>
+<td><input type="text" name="detox" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="detox_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="dinobites">Dino Bites</label></td>
+<td>$34.00</td>
+<td><input type="text" name="dinobites" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="dinobites_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="azul">Elite Azul</label></td>
+<td>$30.50</td>
+<td><input type="text" name="azul" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="azul_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="elite2">Elite II</label></td>
+<td>$36.00</td>
+<td><input type="text" name="elite2" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="elite2_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="nite">Elite Nite</label></td>
+<td>$34.00</td>
+<td><input type="text" name="nite" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="nite_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="shake">Elite Protein Shake</label></td>
+<td>$31.50</td>
+<td><input type="text" name="shake" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="shake_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="emerald">Emerald Green</label></td>
+<td>$34.00</td>
+<td><input type="text" name="emerald" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="emerald_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="gold">Gold</label></td>
+<td>$34.00</td>
+<td><input type="text" name="gold" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="gold_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="di">Heritage DI</label></td>
+<td>$36.00</td>
+<td><input type="text" name="di" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="di_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="jubilee">Heritage Jubilee</label></td>
+<td>$36.00</td>
+<td><input type="text" name="jubilee" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="jubilee_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="slimtea">Heritage Slim Tea</label></td>
+<td>$34.00</td>
+<td><input type="text" name="slimtea" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="slimtea_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="hgh">HGH Youth Activator</label></td>
+<td>$52.00</td>
+<td><input type="text" name="hgh" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="hgh_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="silver">Ionic Silver</label></td>
+<td>$34.00</td>
+<td><input type="text" name="silver" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="silver_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="beauty">Inner Beauty</label></td>
+<td>$36.50</td>
+<td><input type="text" name="beauty" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="beauty_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="memory">Memory Plus</label></td>
+<td>$34.00</td>
+<td><input type="text" name="memory" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="memory_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="mobility">Mobility</label></td>
+<td>$36.00</td>
+<td><input type="text" name="mobility" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="mobility_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="olakinononi">Olakino Noni</label></td>
+<td>$34.00</td>
+<td><input type="text" name="olakinononi" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="olakinononi_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="omega3">New Omega 3</label></td>
+<td>$25.00</td>
+<td><input type="text" name="omega3" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="omega3_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="osteoguard">OsteoGuard</label></td>
+<td>$26.00</td>
+<td><input type="text" name="osteoguard" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="osteoguard_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="platinum">Platinum</label></td>
+<td>$35.00</td>
+<td><input type="text" name="platinum" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="platinum_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="prosta">Prosta Plus</label></td>
+<td>$34.00</td>
+<td><input type="text" name="prosta" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="prosta_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="rejuvenate">Rejuvenate</label></td>
+<td>$34.00</td>
+<td><input type="text" name="rejuvenate" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="rejuvenate_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="steel">Steel</label></td>
+<td>$37.50</td>
+<td><input type="text" name="steel" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="steel_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="shark">Shark</label></td>
+<td>$34.00</td>
+<td><input type="text" name="shark" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="shark_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="svelte">Svelte</label></td>
+<td>$36.00</td>
+<td><input type="text" name="svelte" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="svelte_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td><label for="aloe">Aloe Essence</label></td>
+<td>$34.00</td>
+<td><input type="text" name="aloe" value="0" size=6 onchange="if (!valid_number(this.value)) {this.focus(); this.select()} else {calculate(this.form);}"/></td>
+<td><input type="text" class="box" name="aloe_total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr><td></td><td></td><td></td><td></td></tr>
+
+<tr>
+<td></td>
+<td><input type="text" class="box2" name="ptotal" value="0" size=6 onblur="calculate(this.form)"/></td>
+<td align="right"><label for="subtotal">Sub-Total</td>
+<td><input type="text" class="box" name="subtotal" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td>Shipping Type <select name="ShipType" onchange="calculate(this.form)">
+	<option VALUE="Regular">Regular</option>
+	<option VALUE="3rdday">3rd Day</option>
+	<option VALUE="2ndday">2nd Day</option>
+	<option VALUE="Overnight">Overnight</option>
+</select></td>
+<td></td>
+<td align="left"><label for="shipping">Shipping</label></td>
+<td><input type="text" class="box" name="shipping" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td align="right"><label for="total">Total</label></td>
+<td><input type="text" class="box" name="total" value="0.00" size=8 onblur="calculate(this.form)"/></td>
+</tr>
+
+<tr>
+<td colspan="4" rowspan="1"><h3><a id="ship_info" class="listTxt">Customer &amp; Shipping Information</a> </h3></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">First Name <input type="text" name="FirstName"/></td>
+<td colspan="2" rowspan="1" align="right">Last Name <input type="text" name="LastName"/></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">Email <input type="text" name="Email"/></td>
+<td colspan="2" rowspan="1" align="right">Address <input type="text" name="Address"/></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">City <input type="text" name="City"/></td>
+<td align="right">State <input size=3 type="text" name="State"/></td>
+<td align="right">Zip <input size=5 type="text" name="Zip"/></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">Phone # <input type="text" name="Phone"/></td>
+</tr>
+
+<tr><td rowspan="1"></td></tr>
+
+<tr>
+<td colspan="4" rowspan="1"><h3>Payment Information</h3></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">Name as it appears on card <input type="text" name="CardName"/></td>
+<td colspan="2" rowspan="1" align="right">Card Type <select name="CardType">
+	<option VALUE="No Card Selected">Select One</option>
+	<option VALUE="Visa"/>Visa</option>
+	<option VALUE="Mastercard">MasterCard</option>
+	<option VALUE="Discover">Discover</option>
+</select></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">Card # <input type="text" name="CardNum"/></td>
+<td colspan="2" rowspan="1" align="right">Exp Date <input type="text" size=13 name="ExpDate"/></td>
+</tr>
+
+<tr><td rowspan="1"></td></tr>
+
+<tr>
+<td colspan="4" rowspan="1"><h3>For Distributors</h3></td>
+</tr>
+
+<tr>
+<td colspan="2" rowspan="1" align="right">Distributor Name <input type="text" name="DisName"/></td>
+<td colspan="2" rowspan="1" align="right">Distributor # <input type="text" size=13 name="DisNum"/></td>
+</tr>
+
+</table>
+<input type="submit" value="Submit Form"> <input type="reset" value="Clear Form">
+</form>
+<a href="#top" class="link">Back to Top</a>
+</div>
+		
+			
+	</div>
+
+
+<script type="text/javascript"> 
+
+$(document).ready(function () {  
+
+$('.dropdown-toggle').dropdown();  
+
+});  
+
+</script>
+	</body>
+</html>
