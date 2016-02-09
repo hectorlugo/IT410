@@ -1,0 +1,182 @@
+body{
+	background-image:url('../img/background.jpg');
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1{
+	color: #e3ecd4;
+}
+
+.content{
+	background: rgb(112, 114, 108);
+	background: rgba(112, 114, 108, .8);
+	border-radius: 15px;
+}
+
+
+h2{
+	text-align: right; 
+	font-size: 12pt;
+	position:absolute;
+	right:50px;
+	top:10px;
+	color: white;
+}
+
+.center{
+	text-align: center;
+}
+
+#ralign{
+	text-align: right;
+}
+.body_text{
+	padding: 10px;
+	color: white;
+}
+#para1{
+	font-family: "Times New Roman", cursive, sans-serif;
+	font-size: 14pt;
+	color: #066912;
+}
+#para2{
+	font-family: cursive, sans-serif;
+	font-size: 16pt;
+	color: #48C7B0;
+	background-color: blue;
+}
+
+h3{
+	color: white;
+}
+
+h4{
+	font-weight: bold;
+	font-family: Arial;
+	display: block;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+h5{
+	border: 1px solid black;
+	padding: 2px;
+	padding-left: 10px;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+.txtchg{
+	color: #0224ad;
+}
+
+.txtchg:hover{
+	color: #d90231;
+	text-decoration: none;
+}
+
+.fntchg:hover{
+	font-family: "Comic Sans MS";
+	padding-bottom: 18px;
+	padding-top: 18px;
+	color: #A0A3A0;
+}
+a{
+	text-align: right;
+}
+a.fb{
+	
+	background: #9e989a;
+	padding:10px;
+	
+	/*margin: 15px;*/
+	display: inline-block;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow: 3px 3px 6px #999;
+	text-decoration: none;
+	border: 2px solid #082fa3;
+	color: red;
+	
+
+}
+span.txt-edit{
+	padding: 10px;
+	color: white;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+	display: block;
+}
+
+span.txt-edit2{
+	color: white;
+	background-color: black;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+}
+
+.animated_div{
+	width:90px;
+	height:60px;
+	background:#9e989a;
+	color:#ffffff;
+	font-weight:bold;
+	font-size:15px;
+	padding:10px;
+	margin:10px;
+	transition-property:width,height,transform,background,font-size,opacity;
+	transition-duration:1s,1s,1s,1s,1s,1s;
+	border-radius:10px;
+	opacity:0.4;
+}
+
+.animated_div:hover{
+	transition-duration: 3.0s;
+	transform: rotate(720deg);
+	opacity:1;
+	background:#1639c4;
+	width:240px;
+	height:160px;
+	font-size:45px;
+}
+
+#first_view{
+	display: none;
+	opacity: 0.9;
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	height:100%;
+	
+	z-indez: 1000;
+}
+
+#endorsements{
+	color: white;
+	padding-top: 20px;
+}
+#pic_align{
+	padding-top: 20px;
+	text-align: center;
+}
+
+#pic_edit{
+	
+	border-radius: 20px;
+}
+
+.carouselPic{
+	width: 1000px;
+	height: 650px;
+}
+
+.carouselPad{
+	padding: 25px;
+}
+
+
+

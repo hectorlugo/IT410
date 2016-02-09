@@ -1,0 +1,16 @@
+{
+  "name": "My_Static_Server",
+  "version": "0.0.1",
+  "description": "Homework",
+  "main" : "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlugo/it410.git"
+  },
+  "author": "Hector Lugo",
+  "license": "ISC",
+  "test": "No Test"
+}
