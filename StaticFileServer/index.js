@@ -12,8 +12,8 @@ if(process.argv[2]){
     console.log('Using location: ' + directory);
     app.use(express.static(directory));
 } else {
-    app.use(express.static(process.cwd() + '/'));
-    console.log(arg);
+    console.log('Using location: ' + process.cwd());
+    app.use(express.static(process.cwd()));
 }
 
 app.get('/', function(reg, res){
