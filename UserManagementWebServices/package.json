@@ -1,0 +1,19 @@
+{
+  "name": "UserManagementWebServices",
+  "version": "0.0.1",
+  "description": "Add user management web services to your serve",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Hector Lugo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlugo/it410.git"
+  },
+  "test": "No Test",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
