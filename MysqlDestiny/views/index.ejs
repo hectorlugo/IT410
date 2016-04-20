@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Destiny Organizer</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+
+    <% if(!isAuthenticated) {%>
+        <a href="login">Log in here</a><br>
+        <a href="register">Register here</a>
+    <% } else { %>
+        Hello, <a href="#" id="fromTest" name="username"><%= user.username %></a>!
+        <a href="/logout">Log out</a>
+
+        <div id="wrapper">
+        <h2>Guardian List</h2>
+        <div id="guardianList">
+            <table>
+                <thead>
+                <th>GuardianID</th>
+                <th>Class</th>
+                <th>Gender</th>
+                <th>Race</th>
+                <th>Level</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="guardianInfo">
+            <h2>Guardian Info</h2>
+            <p><strong>Race:</strong> <span id='race'></span><br>
+                <strong>Class:</strong> <span id='class'></span><br>
+                <strong>Light:</strong> <span id='light'></span><br>
+                <strong>Intellect:</strong> <span id='intellect'></span><br>
+                <strong>Discipline:</strong> <span id='discipline'></span><br>
+                <strong>Strength:</strong> <span id='strength'></span></p>
+        </div>
+
+        <h2>Add Guardian</h2>
+        <div id="addGuardian">
+            <fieldset>
+                <input id="GuardianID" type="text" placeholder="GuardianID">
+                <input id="class" type="text" placeholder="Class"><br>
+                <input id="gender" type="text" placeholder="Gender">
+                <input id="race" type="text" placeholder="Race"><br>
+                <input id="level" type="text" placeholder="Level">
+                <br>
+                <button id="btnAddGuardian">Add Guardian</button>
+            </fieldset>
+        </div><br>
+
+        <h2>Add Weapon</h2>
+        <div id="addWeapon">
+            <fieldset>
+                <input id="WeaponID" type="text" placeholder="WeaponID">
+                <input id="WeaponName" type="text" placeholder="WeaponName"><br>
+                <input id="Type" type="text" placeholder="Type">
+                <input id="Subtype" type="text" placeholder="Subtype"><br>
+                <input id="Attack" type="text" placeholder="Attack">
+                <br>
+                <button id="btnAddWeapon">Add Weapon</button>
+            </fieldset>
+        </div><br>
+
+    <h2>Add Armor</h2>
+    <div id="addArmor">
+        <fieldset>
+            <input id="ArmorID" type="text" placeholder="ArmorID">
+            <input id="ArmorName" type="text" placeholder="ArmorName"><br>
+            <input id="Type" type="text" placeholder="Type">
+            <input id="Defense" type="text" placeholder="Defense"><br>
+            <input id="intellect" type="text" placeholder="Intellect">
+            <input id="discipline" type="text" placeholder="Discipline"><br>
+            <input id="strength" type="text" placeholder="Strength">
+            <br>
+            <button id="btnAddArmor">Add Armor</button>
+        </fieldset>
+    </div><br>
+
+    <h2>Equip Items</h2>
+    <div id="equip">
+        <fieldset>
+            <input id="GuardianID" type="text" placeholder="GuardianID"><br>
+            <input id="wPrimary" type="text" placeholder="Primary Weapon">
+            <input id="wSpecial" type="text" placeholder="Special Weapon">
+            <input id="wHeavy" type="text" placeholder="Heavy Weapon"><br>
+            <input id="Helmet" type="text" placeholder="Helmet">
+            <input id="Gauntlets" type="text" placeholder="Gauntlets">
+            <input id="Chest" type="text" placeholder="Chest">
+            <input id="Legs" type="text" placeholder="Legs"><br>
+            <input id="ClassArmor" type="text" placeholder="ClassArmor">
+            <input id="Artifacts" type="text" placeholder="Artifacts">
+            <input id="Ghost" type="text" placeholder="Ghost"><br>
+            <button id="btnEquipArmor">New Equip</button>
+        </fieldset>
+    </div>
+    </div>
+    <% } %>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="/js/global.js"></script>
+</body>
+</html>
